@@ -1,0 +1,83 @@
+/* Fondo mclaren */
+body {
+  background-image: url('/webpage/images/mclaren/mclarenhtml.png'); /* fondo exclusivo de mclaren */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #f5f0e6; /* tono cálido, elegante */
+}
+
+/* Banner */
+img[src*="VirtualGarage.png"] {
+  width: 350px;
+  height: 350px;
+}
+
+/* Marquee mclaren */
+.marquee-mclaren {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.marquee-mclaren span {
+  display: inline-block;
+  position: relative;
+  animation: moverMarqueemclaren 15s linear infinite;
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #d4af37; /* dorado suave para mclaren */
+  margin: 0;
+}
+
+@keyframes moverMarqueemclaren {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.imagen-grande {
+  display: block !important;
+  float: none !important;
+  margin: 0 auto 20px auto !important;
+  width: 100% !important;       /* Ocupa todo el ancho disponible */
+  max-width: 5000px !important; /* Puedes subir este valor si quieres más grande */
+  height: auto !important;      /* Mantiene la proporción */
+  object-fit: fill !important;  /* Rellena el contenedor */
+  border-radius: 8px;
+}
+
+/* ================================
+   GIFs decorativos personalizados para McLaren
+   ================================ */
+.gif-superpuesto {
+  width: 300px;   /* ancho personalizado */
+  height: 300px;  /* alto personalizado */
+  background-image: url('/webpage/images/banner.gif'); /* GIF exclusivo de McLaren */
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: fixed; /* mantener posición fija */
+  z-index: 1000;   /* sobre el contenido */
+  pointer-events: none; /* que no interfiera con clics */
+}
+
+/* Ajuste de posición izquierda */
+.gif-superpuesto.izq {
+  top: 50%;
+  left: 90px;
+  transform: translateY(-50%);
+}
+
+/* Ajuste de posición derecha */
+.gif-superpuesto.der {
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+}

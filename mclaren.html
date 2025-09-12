@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>McLaren - TVG</title>
+  <link rel="stylesheet" href="/webpage/css/common.css">
+  <link rel="stylesheet" href="/webpage/css/mclaren.css">
+</head>
+<body>
+
+  <!-- GIFs decorativos -->
+  <div class="gif-superpuesto izq"></div>
+  <div class="gif-superpuesto der"></div>
+
+  <!-- Banner superior -->
+  <div style="text-align: center;">
+    <img src="images/VirtualGarage.png" alt="Banner Retro" style="width: 350px; height: 350px;">
+  </div>
+
+  <!-- Contenido principal -->
+  <table width="900" border="1" align="center" cellpadding="10" cellspacing="0">
+    <tr bgcolor="#CCE5FF">
+      <td width="200" valign="top">
+        <!-- Menú lateral -->
+        <b>Welcome:</b><br>
+        <div style="text-align: left;">
+          <a href="index.html">Start Page</a><br>
+          <a href="contacto.html">Contact!</a><br>
+          <hr>
+          <a href="ferrari.html">Ferrari</a><br>
+          <a href="porsche.html">Porsche</a><br>
+          <a href="mclaren.html">McLaren</a><br>
+        </div>
+      </td>
+
+      <td valign="top">
+        <!-- Título principal -->
+        <h1 class="blink">Pushing the Limits of Performance</h1>
+
+        <img src="images/logos/mclarenlogo.png" alt="Logo McLaren" width="250" height="200">
+
+        <p>McLaren has redefined the concept of speed and precision, bringing Formula 1 engineering to the road and pushing automotive innovation to its limits.</p>
+        <hr>
+
+        <!-- McLaren F1 -->
+        <h2>McLaren F1</h2>
+        <img id="rotadorMcLarenF1" src="images/mclaren/f1/1.jpg" class="imagen-grande" alt="McLaren F1">
+        <p>Conceived in the early 1990s as the ultimate road car, the McLaren F1 was a bold statement of engineering ambition. Designed by Gordon Murray, it featured a central driving position, a naturally aspirated BMW V12 engine, and a carbon-fibre monocoque — the first of its kind in a production car. With a top speed of 240 mph, it redefined what was possible for a road‑legal machine, blending Formula 1 technology with everyday usability in a way no other car had before.</p>
+        <hr>
+
+        <!-- McLaren F1 GTR -->
+        <h2>McLaren F1 GTR</h2>
+        <img id="rotadorMcLarenF1GTR" src="images/mclaren/f1gtr/1.jpg" class="imagen-grande" alt="McLaren F1 GTR">
+        <p>Born from the legendary F1, the GTR was McLaren’s answer to the world’s most demanding endurance races. Stripped of excess weight, fitted with racing aerodynamics, and tuned for relentless performance, it stunned the motorsport world by winning the 24 Hours of Le Mans in 1995 on its very first attempt. The F1 GTR wasn’t just a race car — it was proof that McLaren’s road‑car DNA could conquer the track at the highest level.</p>
+        <hr>
+
+        <!-- McLaren F1 LM -->
+        <h2>McLaren F1 LM</h2>
+        <img id="rotadorMcLarenF1LM" src="images/mclaren/f1lm/1.jpg" class="imagen-grande" alt="McLaren F1 LM">
+        <p>Created to celebrate McLaren’s Le Mans triumph, the F1 LM was lighter, more powerful, and even more exclusive than the standard F1. Only five were built, each finished in the striking Papaya Orange as a tribute to Bruce McLaren’s racing heritage. With its stripped‑down interior, uprated V12, and uncompromising focus on performance, the LM embodied the purest expression of the F1’s racing spirit.</p>
+        <hr>
+
+        <!-- McLaren MP4/13 -->
+        <h2>McLaren MP4/13</h2>
+        <img id="rotadorMcLarenMP413" src="images/mclaren/mp413/1.jpg" class="imagen-grande" alt="McLaren MP4/13">
+        <p>The MP4/13 was McLaren’s Formula 1 masterpiece of 1998 — a car that combined Adrian Newey’s aerodynamic genius with Mercedes‑Benz power to dominate the championship. Driven by Mika Häkkinen, it delivered blistering speed, razor‑sharp handling, and the kind of precision that left rivals chasing shadows. Its success marked the beginning of a new era for McLaren in Grand Prix racing, cementing its place among the sport’s greats.</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- Pie de página -->
+  <footer>
+    &copy; 1999 The Virtual Garage - McLaren Edition
+  </footer>
+
+  <!-- Script para rotadores -->
+  <script>
+    const imagenesMcLarenF1 = [
+      "images/mclaren/f1/1F1.jpg",
+      "images/mclaren/f1/2F1.jpg",
+      "images/mclaren/f1/3F1.jpg",
+      "images/mclaren/f1/4F1.jpg",
+      "images/mclaren/f1/5F1.jpg",
+      "images/mclaren/f1/6F1.jpg",
+      "images/mclaren/f1/7F1.jpg",
+      "images/mclaren/f1/8F1.jpg"
+    ];
+
+    const imagenesMcLarenF1GTR = [
+      "images/mclaren/GTR/1GTR.jpg",
+      "images/mclaren/GTR/2GTR.jpg",
+      "images/mclaren/GTR/3GTR.jpg",
+      "images/mclaren/GTR/4GTR.jpg",
+      "images/mclaren/GTR/5GTR.jpg",
+    ];
+
+    const imagenesMcLarenF1LM = [
+      "images/mclaren/LM/1LM.jpg",
+      "images/mclaren/LM/2LM.jpg",
+      "images/mclaren/LM/3LM.jpg",
+      "images/mclaren/LM/4LM.jpg",
+      "images/mclaren/LM/5LM.jpg",
+      "images/mclaren/LM/6LM.jpg",
+      "images/mclaren/LM/7LM.jpg",
+      "images/mclaren/LM/8LM.jpg",
+      "images/mclaren/LM/9LM.jpg"
+    ];
+
+    const imagenesMcLarenMP413 = [
+      "images/mclaren/MP413/1MP413.jpg",
+      "images/mclaren/MP413/2MP413.jpg",
+      "images/mclaren/MP413/3MP413.jpg",
+      "images/mclaren/MP413/4MP413.jpg",
+      "images/mclaren/MP413/5MP413.jpg",
+      "images/mclaren/MP413/6MP413.jpg",
+      "images/mclaren/MP413/7MP413.jpg",
+      "images/mclaren/MP413/8MP413.jpg",
+      "images/mclaren/MP413/9MP413.jpg",
+      "images/mclaren/MP413/10MP413.jpg",
+      "images/mclaren/MP413/11MP413.jpg",
+      "images/mclaren/MP413/12MP413.jpg",
+      "images/mclaren/MP413/13MP413.jpg"
+    ];
+
+    let indiceF1 = 0,
+        indiceF1GTR = 0,
+        indiceF1LM = 0,
+        indiceMP413 = 0;
+
+    const rotadorMcLarenF1 = document.getElementById("rotadorMcLarenF1");
+    const rotadorMcLarenF1GTR = document.getElementById("rotadorMcLarenF1GTR");
+    const rotadorMcLarenF1LM = document.getElementById("rotadorMcLarenF1LM");
+    const rotadorMcLarenMP413 = document.getElementById("rotadorMcLarenMP413");
+
+    setInterval(() => {
+      indiceF1 = (indiceF1 + 1) % imagenesMcLarenF1.length;
+      rotadorMcLarenF1.src = imagenesMcLarenF1[indiceF1];
+
+      indiceF1GTR = (indiceF1GTR + 1) % imagenesMcLarenF1GTR.length;
+      rotadorMcLarenF1GTR.src = imagenesMcLarenF1GTR[indiceF1GTR];
+
+      indiceF1LM = (indiceF1LM + 1) % imagenesMcLarenF1LM.length;
+      rotadorMcLarenF1LM.src = imagenesMcLarenF1LM[indiceF1LM];
+
+      indiceMP413 = (indiceMP413 + 1) % imagenesMcLarenMP413.length;
+      rotadorMcLarenMP413.src = imagenesMcLarenMP413[indiceMP413];
+    }, 3000);
+  </script>
+
+</body>
+</html>

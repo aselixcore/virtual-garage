@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>The Virtual Garage</title>
+  <link rel="stylesheet" href="/webpage/css/common.css">
+  <link rel="stylesheet" href="/webpage/css/index.css">
+
+
+  <style>
+    
+    #video-fondo {
+      position: fixed;
+      top: 0;
+      left: -160px;
+      width: 150%;
+      height: 110%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    body {
+  background-image: url('images/background.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Times New Roman', Times, serif;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+    
+    h1 {
+      font-family: Impact, sans-serif !important;
+      font-size: 42px;
+      color: rgb(178, 34, 34);
+      text-shadow: 2px 2px 4px rgb(103, 0, 0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- musica -->
+  <audio id="musica-fondo" loop>
+    <source src="sounds/musicbackground.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    // Reproduce la música aal clickear
+    document.addEventListener("click", function() {
+      document.getElementById("musica-fondo").play();
+    }, { once: true });
+  </script>
+
+  <!-- gifs -->
+  <div class="gif-superpuesto izq"></div>
+  <div class="gif-superpuesto der"></div>
+
+  <!-- Banner superior -->
+  <div style="text-align: center;">
+    <img src="images/VirtualGarage.png" alt="Banner Retro" style="width: 500px; height: 500px;">
+  </div>
+
+  <!-- Marquee  -->
+  <div class="marquee marquee-blanco">
+    <span>Welcome to The Virtual Garage, take your seatbelt on!</span>
+  </div>
+
+  <!-- Contenido principal -->
+  <table width="800" border="1" align="center" cellpadding="10" cellspacing="0">
+    <tr bgcolor="#CCE5FF">
+      <td width="200" valign="top">
+        <!-- Menú lateral -->
+        <b>Welcome:</b><br>
+        <div style="text-align: left;">
+          <a href="index.html">Start Page</a><br>
+          <a href="contacto.html">Contact!</a><br>
+          <hr>
+          <a href="ferrari.html">Ferrari</a><br>
+          <a href="porsche.html">Porsche</a><br>
+          <a href="mclaren.html">McLaren</a><br>
+          <a href="pagani.html">Pagani</a><br>
+          <hr>
+          <b> Thanks to ours sponsors:
+          <img src="images/gifs/mcos.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/internetexplorer.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/netscape.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/g2.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/msn.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/look.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/sega.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/school.gif" alt="sponsor gif" class="gif-about">  
+          <img src="images/gifs/pocket.gif" alt="sponsor gif" class="gif-about"> 
+          <img src="images/gifs/pcwin.gif" alt="sponsor gif" class="gif-about">  
+          <img src="images/gifs/nbc.gif" alt="sponsor gif" class="gif-about">   
+          <img src="images/gifs/napa.gif" alt="sponsor gif" class="gif-about">  
+          <img src="images/gifs/mt32.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/wiby.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/winrar.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/winzip.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/bsd.gif" alt="sponsor gif" class="gif-about"> 
+          <img src="images/gifs/aol.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/albino.gif" alt="sponsor gif" class="gif-about">
+          <img src="images/gifs/www.gif" alt="sponsor gif" class="gif-about">               
+          <img src="images/gifs/amazon.gif" alt="sponsor gif" class="gif-about"> 
+          <img src="images/gifs/amazon2.gif" alt="sponsor gif" class="gif-about">   
+          </b>
+        </div>
+      </td>
+      
+
+      <td valign="top">
+        <h1 class="blink">WELCOME TO THE VIRTUAL GARAGE</h1>
+        <p>Feel at home and let the gasoline run through your veins.</p>
+        <hr>
+
+        <!-- Título clickeable hacia Ferrari -->
+        <h2 style="margin: 10px 0;">
+          <a href="ferrari.html" style="text-decoration: none; color: red; text-shadow: 1px 1px 2px black;">
+            Ferrari By Enzo Ferrari
+          </a>
+        </h2>
+
+        <!-- Imagen debajo del título -->
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="headers/enzo-ferrari.webp" alt="Enzo Ferrari" style="max-width: 100%; height: auto;">
+        </div>
+
+        <hr>
+
+        <!-- Título clickeable hacia Porsche -->
+        <h2 style="margin: 10px 0;">
+          <a href="porsche.html" style="text-decoration: none; color: rgb(26, 82, 15); text-shadow: 1px 1px 2px black;">
+            Porsche By Ferdinand Porsche
+          </a>
+        </h2>
+
+        <!-- Imagen debajo del título -->
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="headers/Ferdinand-porsche.jpg" alt="Porsche 911" style="max-width: 100%; height: auto;">
+        </div>
+        <hr>
+        <!-- Título clickeable hacia McLaren -->
+        <h2 style="margin: 10px 0;">
+          <a href="mclaren.html" style="text-decoration: none; color: rgb(15, 45, 82); text-shadow: 1px 1px 2px black;">
+          McLaren By Bruce McLaren 
+        </a>
+      </h2>
+        <div style="text-align: center; margin: 20px 0;">
+          <img src="headers/bruce-mclaren.jpg" alt="McLaren Legacy" style="max-width: 100%; height: auto;">
+            </div>
+          <hr>
+          <!-- Título clickeable hacia Pagani -->
+<h2 style="margin: 10px 0;">
+  <a href="pagani.html" style="text-decoration: none; color: rgb(82, 15, 45); text-shadow: 1px 1px 2px black;">
+    Pagani By Horacio Pagani
+  </a>
+</h2>
+
+<!-- Imagen debajo del título -->
+<div style="text-align: center; margin: 20px 0;">
+  <img src="headers/horacio-pagani.jpg" alt="Horacio Pagani" style="max-width: 100%; height: auto;">
+</div>
+          <hr>
+      </td>
+    </tr>
+  </table>
+
+  <footer>
+  &copy; 1999 The Virtual Garage - All rights reserved.
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #FFFFCC;
+  color: #000000;
+}
+
+/* Banner */
+img[src*="VirtualGarage.png"] {
+  width: 500px;
+  height: 500px;
+}
+
+/* Título principal */
+h1 {
+  font-family: Impact, sans-serif !important;
+  font-size: 42px;
+  color: rgb(178, 34, 34);
+  text-shadow: 2px 2px 4px rgb(103, 0, 0);
+}

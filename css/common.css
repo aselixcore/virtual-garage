@@ -1,0 +1,97 @@
+/* Fuente y alineación general */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Enlaces */
+a {
+  color: #0000FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Tablas */
+table {
+  border-collapse: collapse;
+}
+
+/* GIFs decorativos */
+.gif-superpuesto {
+  position: fixed;
+  width: 420px;
+  height: 420px;
+  background-image: url('../images/banner.gif'); /* Ruta relativa desde /css/ */
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.izq {
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+}
+
+.der {
+  top: 50%;
+  right: -120px;
+  transform: translateY(-50%);
+}
+
+/* Marquee animado */
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Blink */
+.blink {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Marquee blanco con sombra */
+.marquee-blanco,
+.marquee-blanco span {
+  color: white !important;
+  text-shadow: 2px 2px 4px black;
+}
+
+/* Pie de página */
+footer {
+  color: white;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Ajuste automático de imágenes de modelos */
+img[id^="rotador"] {
+  max-width: 300px;  /* límite de ancho */
+  height: auto;      /* mantiene proporción */
+  display: block;
+  margin: 0 15px 10px 0;
+  float: left;
+}
+

@@ -1,0 +1,43 @@
+body {
+  background-image: url('/webpage/images/porsche/porschehtml.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #fdf6e3;
+}
+
+/* Banner */
+img[src*="VirtualGarage.png"] {
+  width: 350px;
+  height: 350px;
+}
+
+/* Marquee Porsche */
+.marquee-porsche {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: transparent; /* o el color que quieras */
+  font-family: "Times New Roman", Times, serif; /* misma fuente que los otros */
+}
+
+.marquee-porsche span {
+  display: inline-block;
+  position: relative;
+  animation: moverMarqueePorsche 15s linear infinite;
+  font-size: 0.85em; /* más pequeño */
+  font-weight: bold;
+  color: #fff; /* ajusta según tu fondo */
+  margin: 0;
+}
+
+@keyframes moverMarqueePorsche {
+  0% {
+    transform: translateX(100%); /* empieza fuera de la pantalla, a la derecha */
+  }
+  100% {
+    transform: translateX(-100%); /* termina fuera de la pantalla, a la izquierda */
+  }
+}
