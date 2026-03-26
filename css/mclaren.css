@@ -1,6 +1,6 @@
 /* Fondo mclaren */
 body {
-  background-image: url('/webpage/images/mclaren/mclarenhtml.png'); /* fondo exclusivo de mclaren */
+  background-image: url('/virtual-garage/images/mclaren/mclarenhtml.png'); /* fondo exclusivo de mclaren */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -60,7 +60,7 @@ img[src*="VirtualGarage.png"] {
 .gif-superpuesto {
   width: 300px;   /* ancho personalizado */
   height: 300px;  /* alto personalizado */
-  background-image: url('/webpage/images/banner.gif'); /* GIF exclusivo de McLaren */
+  background-image: url('/virtual-garage/images/banner.gif'); /* GIF exclusivo de McLaren */
   background-size: contain;
   background-repeat: no-repeat;
   position: fixed; /* mantener posición fija */

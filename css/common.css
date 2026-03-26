@@ -26,7 +26,7 @@ table {
   position: fixed;
   width: 420px;
   height: 420px;
-  background-image: url('../images/banner.gif'); /* Ruta relativa desde /css/ */
+  background-image: url('/virtual-garage/images/banner.gif'); /* Ruta relativa desde /css/ */
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1000;

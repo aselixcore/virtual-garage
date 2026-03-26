@@ -1,1 +1,0 @@
-//futuras funciones de JavaScript para la página web
