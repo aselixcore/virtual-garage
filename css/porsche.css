@@ -1,5 +1,5 @@
 body {
-  background-image: url('/webpage/images/porsche/porschehtml.jpg');
+background-image: url('../images/porsche/porschehtml.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
